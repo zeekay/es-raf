@@ -1,8 +1,8 @@
-# raf
+# es-raf
 
 [![Browser Support](http://ci.testling.com/chrisdickinson/raf.png)](http://ci.testling.com/chrisdickinson/raf)
 
-requestAnimationFrame polyfill for node and the browser.
+Module-friendly fork of `raf`, a requestAnimationFrame polyfill for node and the browser.
 
 ```js
 var raf = require('raf')

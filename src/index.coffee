@@ -1,3 +1,5 @@
+import now from 'es-now'
+
 frameDuration = 1000 / 60
 id            = 0
 last          = 0
@@ -5,9 +7,9 @@ queue         = []
 
 export raf = (callback) ->
   if queue.length == 0
-    now  = Date.now()
-    next = Math.max(0, frameDuration - (now - last))
-    last = next + now
+    now_ = now()
+    next = Math.max(0, frameDuration - (now_ - last))
+    last = next + now_
 
     setTimeout ->
       cp = queue.slice(0)

@@ -1,5 +1,5 @@
 var test = require('tape')
-  , {raf, caf} = require('./dist/esraf.js')
+  , {raf, caf} = require('./')
 
 test('continues to emit events', function(t) {
   t.plan(11)

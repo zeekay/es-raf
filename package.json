@@ -1,16 +1,16 @@
 {
-  "name": "esraf",
+  "name": "es-raf",
   "version": "3.3.0",
   "description": "requestAnimationFrame polyfill for node and the browser",
-  "main": "dist/esraf.js",
-  "module": "dist/esraf.mjs",
-  "js:next": "dist/esraf.mjs",
+  "main": "dist/es-raf.js",
+  "module": "dist/es-raf.mjs",
+  "js:next": "dist/es-raf.mjs",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/zeekay/esraf.git"
+    "url": "git://github.com/zeekay/es-raf.git"
   },
   "keywords": [
     "requestAnimationFrame",
@@ -27,5 +27,8 @@
     "coffee-script": "1.12.4",
     "shortcake": "1.2.5",
     "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "es-now": "2.1.0"
   }
 }
