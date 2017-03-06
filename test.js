@@ -1,5 +1,5 @@
 var test = require('tape')
-  , raf = require('./index.js')
+  , {raf, caf} = require('./dist/esraf.js')
 
 test('continues to emit events', function(t) {
   t.plan(11)
@@ -33,7 +33,7 @@ test('cancel removes callbacks from queue', function(t) {
   var handle3 = raf(cb3)
   t.ok(handle3, 'returns a handle')
 
-  raf.cancel(handle2)
+  caf(handle2)
 
   raf(function() {
     t.ok(cb1.called, 'callback was invoked')

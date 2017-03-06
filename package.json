@@ -1,15 +1,16 @@
 {
-  "name": "raf",
+  "name": "esraf",
   "version": "3.3.0",
   "description": "requestAnimationFrame polyfill for node and the browser",
-  "main": "index.js",
+  "main": "dist/esraf.js",
+  "module": "dist/esraf.mjs",
+  "js:next": "dist/esraf.mjs",
   "scripts": {
-    "testling": "browserify test.js | testling",
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/chrisdickinson/raf.git"
+    "url": "git://github.com/zeekay/raf.git"
   },
   "keywords": [
     "requestAnimationFrame",
@@ -21,28 +22,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "testling": "~1.6.1",
-    "browserify": "~4.1.2",
+    "cake-publish": "0.1.5",
+    "cake-version": "0.1.9",
+    "coffee-script": "1.12.4",
+    "shortcake": "1.2.5",
     "tape": "^4.0.0"
-  },
-  "dependencies": {
-    "performance-now": "~0.2.0"
-  },
-  "testling": {
-    "files": "test.js",
-    "browsers": [
-      "iexplore/6.0..latest",
-      "firefox/3.0..6.0",
-      "firefox/15.0..latest",
-      "firefox/nightly",
-      "chrome/4.0..10.0",
-      "chrome/20.0..latest",
-      "chrome/canary",
-      "opera/10.0..latest",
-      "opera/next",
-      "safari/4.0..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest"
-    ]
   }
 }
