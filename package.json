@@ -7,6 +7,7 @@
   "js:next": "dist/es-raf.mjs",
   "files": ["dist/"],
   "scripts": {
+    "prepublish": "cake build",
     "test": "node test.js"
   },
   "repository": {
