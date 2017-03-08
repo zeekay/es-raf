@@ -5,7 +5,7 @@ id            = 0
 last          = 0
 queue         = []
 
-export raf = (callback) ->
+export raf = requestAnimationFrame = (callback) ->
   if queue.length == 0
     now_ = now()
     next = Math.max(0, frameDuration - (now_ - last))
@@ -34,7 +34,7 @@ export raf = (callback) ->
     cancelled: false
   id
 
-export caf = (handle) ->
+export caf = cancelAnimationFrame = (handle) ->
   for x in queue
     if x.handle == handle
       x.cancelled = true
