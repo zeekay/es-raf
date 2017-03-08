@@ -5,6 +5,7 @@
   "main": "dist/es-raf.js",
   "module": "dist/es-raf.mjs",
   "js:next": "dist/es-raf.mjs",
+  "files": ["dist/"],
   "scripts": {
     "test": "node test.js"
   },
