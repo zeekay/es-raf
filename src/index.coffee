@@ -39,8 +39,3 @@ export caf = (handle) ->
     if x.handle == handle
       x.cancelled = true
   return
-
-root = if typeof window == 'undefined' then global else window
-
-export requestAnimationFrame = root.requestAnimationFrame ? raf
-export cancelAnimationFrame  = root.cancelAnimationFrame  ? caf
