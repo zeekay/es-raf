@@ -1,11 +1,13 @@
 {
   "name": "es-raf",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "requestAnimationFrame polyfill for node and the browser",
   "main": "dist/es-raf.js",
   "module": "dist/es-raf.mjs",
   "js:next": "dist/es-raf.mjs",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "prepublish": "cake build",
     "test": "node test.js"
